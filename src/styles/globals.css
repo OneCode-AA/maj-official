@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.hero-slider {
+  display: flex;
+  transition: transform 0.7s ease-in-out;
+}
