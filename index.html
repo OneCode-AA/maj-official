@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>M.A.J. Landing Page</title>
+
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/tablet.css" />
+    <link rel="stylesheet" href="/assets/css/desktop.css" />
+
+    <script
+      src="https://kit.fontawesome.com/880dbed722.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anta&family=Audiowide&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bruno+Ace+SC&family=Inconsolata:wght@200..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playpen+Sans+Arabic:wght@100..800&family=Playwrite+MX+Guides&family=Quicksand:wght@300..700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Saira+Stencil+One&family=Smooch+Sans:wght@100..900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&family=Tourney:ital,wght@0,100..900;1,100..900&family=Zen+Dots&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header id="header" class="header">
+      <a href="#" class="logo-link">
+        <i class="fa-solid fa-binoculars logo"></i>
+      </a>
+      <div class="actionBar">
+        <button id="menuBtn" class="menuBtn">
+          <span class="first"></span>
+          <span class="second"></span>
+          <span class="third"></span>
+        </button>
+        <a href="mailto:fjamal04@gmail.com" class="contactBtn">Contact Us</a>
+      </div>
+    </header>
+    <nav id="nav" class="nav">
+      <ul class="nav-ul">
+        <li class="nav-li"><a href="#hero" class="nav-li-a">Home</a></li>
+        <li class="nav-li">
+          <a href="#services" class="nav-li-a">Services</a>
+        </li>
+        <li class="nav-li">
+          <a href="#portfolio" class="nav-li-a">Portfolio</a>
+        </li>
+        <li class="nav-li">
+          <a href="#testimonies" class="nav-li-a">Testimonies</a>
+        </li>
+        <li class="nav-li">
+          <a href="#contact" class="nav-li-a">Contact US</a>
+        </li>
+      </ul>
+    </nav>
+    <main id="main" class="main">
+      <section id="hero" class="hero">
+        <article class="sectionContainer">
+          <section class="heroLeft">
+            <article class="heroIntro">
+              <p>M.A.J. General Maintenance</p>
+              <h1>Minnesota's finest <span class="xo">Handy Man.</span></h1>
+              <p>
+                With extensive industry knowledge, I provide world class service
+                and will leave you satisfied choosing me as your
+                <span class="ox">Handy Man</span> for the job.
+              </p>
+            </article>
+
+            <article class="heroActions">
+              <a href="tel:+16123573822" class="quote">Get a Quote</a>
+              <a href="#portfolio" class="preview">View My Work</a>
+            </article>
+          </section>
+          <section class="heroRight">
+            <video
+              src="/assets/videos/expo2.mp4"
+              controls
+              muted
+              height="450"
+              width="100%"
+            ></video>
+          </section>
+        </article>
+      </section>
+
+      <section id="services" class="services">
+        <article class="sectionContainer">
+          <h2 class="section-title">
+            Here's some of my <span class="buzzwords">Services</span>
+          </h2>
+          <section class="serviceContainer" id="serviceContainer"></section>
+        </article>
+      </section>
+
+      <section id="portfolio" class="portfolio">
+        <article class="sectionContainer">
+          <h2 class="section-title">
+            Here's some of my <span class="buzzwords">Work</span>
+          </h2>
+          <section class="project-container" id="projectContainer"></section>
+        </article>
+      </section>
+
+      <section id="testimonies" class="testimonies">
+        <article class="sectionContainer">
+          <h2 class="section-title">
+            Here's some <span class="buzzwords">Testimonies</span> regarding my
+            <span class="buzzwords">Work</span>
+          </h2>
+          <section id="testimonials" class="testimonials"></section>
+        </article>
+      </section>
+
+      <section id="contact" class="contact">
+        <article class="sectionContainer">
+          <h2 class="section-title">Get In Touch</h2>
+          <section id="contactContainer" class="contactContainer">
+            <a
+              href="https://www.linkedin.com/in/m-a-j-general-maintenance-lnc-company-24a90b6a/"
+              class="contactLink"
+            >
+              <i class="fa-brands fa-linkedin-in linkedinIcon"></i>
+            </a>
+            <a href="mailto:fjamal04@gmail.com" class="contactLink">
+              <i class="fa-solid fa-envelope mailing"></i>
+            </a>
+            <a href="tel:+16123573822" class="contactLink">
+              <i class="fa-solid fa-phone-volume phoneCall"></i>
+            </a>
+          </section>
+        </article>
+      </section>
+    </main>
+    <footer id="footer" class="footer">
+      <a href="#hero" class="logo-link logo-footer">
+        <i class="fa-solid fa-binoculars logo logo-footer"></i>
+      </a>
+      <span class="lineOx"></span>
+      <p class="copytext">&copy; Copyright 2025 M.A.J.</p>
+    </footer>
+
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+@media (min-width: 1024px) {
+
+
+    .nav {
+        width: 50vw;
+        top: 0;
+        right: -100vw;
+
+    }
+
+    .nav.opened {
+        right: 0;
+    }
+
+    /* :is(.hero, .portfolio, .testimonies, .contact) {
+
+        margin-top: 30px;
+
+    } */
+
+    .hero .sectionContainer {
+        flex-direction: unset;
+        height: 100%;
+    }
+
+    .heroLeft {
+        align-items: start;
+        gap: 2.4rem;
+
+    }
+
+
+    .heroActions {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+
+
+    .heroLeft {
+        width: 100%;
+        padding-inline: unset;
+
+    }
+
+    .heroRight {
+        border-top: unset;
+        border-bottom: unset;
+        padding: 0 20px;
+
+    }
+
+
+    .section-title {
+        font-size: xx-large;
+    }
+
+
+
+
+
+
+
+}

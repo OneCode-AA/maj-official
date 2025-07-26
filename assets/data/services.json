@@ -1,0 +1,42 @@
+[
+  {
+    "id": 1,
+    "name": "Electrical Maintenance",
+    "details": "Installation & Troubleshooting."
+  },
+  {
+    "id": 2,
+    "name": "Alarm System",
+    "details": "Installation & Troubleshooting."
+  },
+  {
+    "id": 3,
+    "name": "Surveillance Systems",
+    "details": "Installations for both Indoors and Outdoors."
+  },
+  {
+    "id": 4,
+    "name": " Audio & Video",
+    "details": "Installation & Troubleshooting."
+  },
+  {
+    "id": 5,
+    "name": "Door Security Systems",
+    "details": "Installation & Troubleshooting."
+  },
+  {
+    "id": 6,
+    "name": "Painting",
+    "details": "for both Indoors and Outdoors."
+  },
+  {
+    "id": 7,
+    "name": "Home Remodeling",
+    "details": "Flooring, Ceiling, Drywall and more.."
+  },
+  {
+    "id": 8,
+    "name": "HVAC",
+    "details": "cooling and heating system issue? no problem"
+  }
+]

@@ -1,0 +1,610 @@
+:root {
+    --bg-primary: #fafaf9;
+    --bg-secondary: #e7e5e4;
+    --bg-third: #a8a29e;
+    --text-primary: #1c1917;
+    --text-secondary: #0c0a09;
+    --theme-100: #e5f4ff;
+    --theme-200: #abd0eb;
+    --theme-300: #72acd8;
+    --theme-400: #3988c5;
+    --theme-500: #0064b2;
+    --theme-600: #00508c;
+    --theme-700: #003a66;
+    --theme-800: #002440;
+    --theme-900: #000e1a;
+
+}
+
+
+html {
+    box-sizing: border-box;
+    min-height: 100vh;
+    max-width: 100vw;
+    width: 100%;
+    height: 100%;
+    font-size: 97%;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    text-decoration: none;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding: 4px;
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: "Montserrat", sans-serif;
+}
+
+
+a {
+    color: var(--text-secondary);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--bg-primary);
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 60;
+    padding-inline: 15px;
+    box-shadow: 0 1px 3px 0 #0000001a, 0 1px 2px -1px #0000001a;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    color: var(--theme-500);
+}
+
+.actionBar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuBtn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: end;
+    gap: 6px;
+    width: 40px;
+    /* Adjust as needed */
+    height: 30px;
+    /* Adjust as needed */
+    padding: 0;
+
+}
+
+.menuBtn span {
+    background-color: var(--text-primary);
+    /* Or your preferred color */
+    height: 3px;
+    /* Adjust as needed */
+    border-radius: 2px;
+    transition: transform 1s ease-in-out, opacity .7s ease-in-out, background .5s ease-in-out;
+    /* Set transition for smooth animation */
+}
+
+.menuBtn:hover.menuBtn span {
+    background: var(--theme-400);
+}
+
+
+.first {
+    width: 100%;
+}
+
+.second {
+    width: 75%;
+}
+
+.third {
+    width: 55%;
+}
+
+
+.menuBtn.active {
+    justify-content: space-between;
+    align-items: unset;
+    gap: unset;
+}
+
+
+.menuBtn.active .first {
+    width: 100%;
+    transform: translateY(13px) rotate(45deg);
+    /* Move down and rotate to form the top of the X */
+}
+
+
+.menuBtn.active .second {
+    opacity: 0;
+    /* Fade out the middle bar */
+    transform: translateX(100%);
+    /* Move to the right, out of the element */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out 0.1s;
+    /* Add a slight delay to the fade */
+}
+
+
+.menuBtn.active .third {
+    width: 100%;
+    transform: translateY(-13px) rotate(-45deg);
+    /* Move up and rotate to form the bottom of the X */
+}
+
+.contactBtn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    background: var(--alt);
+    color: var(--bg-primary);
+    border-radius: 1.5rem;
+    border: 1px solid var(--text-secondary);
+}
+
+
+.nav {
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: -100vh;
+    z-index: 55;
+    transition: 500ms ease-in-out;
+}
+
+.nav.opened {
+    top: 0;
+}
+
+.nav-ul {
+    height: 100%;
+    background: var(--bg-primary);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2.6rem;
+    justify-content: center;
+}
+
+.nav-li {
+    padding: 10px;
+}
+
+.nav-li-a {
+    text-transform: uppercase;
+}
+
+.nav-li-a:hover {
+    color: var(--theme-500);
+    cursor: pointer;
+}
+
+
+
+
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+:is(.hero, .portfolio, .testimonies, .contact) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+    min-height: 100vh;
+}
+
+
+.buzzwords {
+    color: var(--theme-500);
+    text-decoration: underline;
+    font-style: italic;
+}
+
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 10px;
+    gap: 2rem;
+    padding-block: 2rem;
+}
+
+.hero .sectionContainer {
+    gap: 4rem;
+    margin-bottom: 50px;
+}
+
+.heroLeft {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    height: 70vh;
+
+
+}
+
+.heroIntro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1.4rem;
+    color: var(--theme-700);
+}
+
+.xo {
+    color: var(--theme-800);
+    display: block;
+}
+
+.ox {
+    color: var(--theme-700);
+}
+
+
+.heroActions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.quote, .preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    width: 90vw;
+    border: 2px solid var(--theme-900);
+    border-radius: 5px;
+    transition: 500ms ease-in-out;
+}
+
+.quote {
+    background: var(--theme-600);
+    color: var(--theme-100);
+}
+
+.quote:hover {
+    background: var(--theme-500);
+}
+
+.preview {
+    color: var(--theme-900);
+
+}
+
+.preview:hover {
+    background: var(--theme-200);
+}
+
+
+.heroRight {
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    border-top: 1px solid var(--theme-800);
+    border-bottom: 1px solid var(--theme-800);
+    padding: 20px 0;
+
+
+}
+
+video {
+    margin: auto;
+
+}
+
+
+.serviceContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.serviceContainer article:nth-child(odd) {
+    background: var(--theme-500);
+}
+
+.serviceContainer article:nth-child(even) {
+    background: var(--theme-900);
+}
+
+.serviceCard {
+    max-width: 90vw;
+    width: 400px;
+    border: 1px solid var(--text-secondary);
+    height: 200px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    box-shadow: 3px 6px 6px 1px #0000001a, 3px 3px 4px 2px #0000001a;
+}
+
+.serviceItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4em;
+    background: var(--bg-primary);
+    width: 100%;
+    height: 100%;
+    margin-top: 10px;
+
+}
+
+
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+
+
+}
+
+
+.projectCard {
+
+    max-height: 500px;
+    height: 400px;
+    max-width: 90vw;
+    width: 500px;
+
+    border-radius: 10px;
+    overflow: auto;
+    box-shadow: 3px 6px 6px 1px #0000001a, 3px 3px 4px 2px #0000001a;
+}
+
+
+
+.projectName {
+    border-radius: 10px;
+    /* background: var(--bg-secondary); */
+    padding: 2px 10px;
+    width: fit-content;
+    display: block;
+
+    margin: 20px auto;
+
+
+}
+
+.projectDetails {
+    margin-block: 20px;
+}
+
+
+.projectImg {
+    height: 200px;
+    max-height: 300px;
+    min-width: 400px;
+    width: 100%;
+}
+
+.projectService {
+    margin-left: 20px;
+    margin-top: 40px;
+    color: var(--theme800);
+    background: var(--theme-100);
+    font-style: italic;
+    width: fit-content;
+    border-radius: 2rem;
+    padding: 3px 15px;
+    display: block;
+    margin: auto;
+}
+
+.testimonies {
+    display: flex;
+    width: 100%;
+    padding-inline: 10px;
+    padding-block: 5px;
+}
+
+.testimonies .section-title {
+    text-align: center;
+}
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    text-align: center;
+
+}
+
+.notavailable {
+    background: var(--theme-600);
+    color: var(--bg-primary);
+    padding: 4px 15px;
+    border-radius: 6px;
+}
+
+
+.testimonyCard {
+    width: 550px;
+    max-width: 90vw;
+    max-height: 500px;
+    height: 400px;
+    overflow: auto;
+    padding-inline: 3px;
+    margin-block: 2rem;
+
+}
+
+.testimonyItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    background: var(--bg-primary);
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+    border-radius: 12px;
+
+}
+
+.testimonialContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--theme-600);
+    height: 70%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 3px 6px 6px 1px #0000001a, 3px 3px 4px 2px #0000001a;
+}
+
+.testimonial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    height: 70%;
+    background: var(--bg-secondary);
+    border-radius: 3rem;
+
+
+}
+
+.testimonyDetails {
+    font-size: 1rem;
+    width: 50%;
+    text-align: center;
+
+
+}
+
+
+.companyLogo {
+    height: 100px;
+}
+
+.lineXo {
+    display: inline-block;
+    background: black;
+    width: 2px;
+    height: 90px;
+    margin-inline: 5px;
+
+}
+
+.testimonyName {
+    padding-inline: 10px;
+}
+
+.testimonyService {
+    text-align: center;
+}
+
+:is(.serviceCard, .projectCard, .testimonyCard) {
+    transition: 400ms ease-in-out;
+    cursor: pointer;
+}
+
+:is(.serviceCard, .projectCard, .testimonyCard):hover {
+    transform: scale(1.0420);
+}
+
+.contactContainer {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    height: 100%;
+    max-height: 500px;
+}
+
+.contactLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    font-size: 3rem;
+    border-radius: 5rem;
+    padding: 20px 15px;
+    background: var(--bg-secondary);
+    transition: 500ms ease-in-out;
+}
+
+.contactLink:hover {
+    background: var(--theme-400);
+}
+
+.contactLink i {
+    transition: 500ms ease-in-out;
+}
+
+.contactLink:hover.contactLink i {
+    color: var(--theme-100);
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.lineXo {
+    display: inline-block;
+    background: black;
+    width: 2px;
+    height: 20px;
+    margin-inline: 5px;
+
+}

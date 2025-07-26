@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "company": "Smith Family",
+    "companyLogo": "https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png",
+    "details": "\"Fantastic work! Timely and very professional.\"",
+    "service": "Home Remodeling"
+  },
+  {
+    "id": 2,
+    "company": "Johnson Flooring",
+    "companyLogo": "https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png",
+    "details": "\"Our floors look brand new, very happy.\"",
+    "service": "Flooring"
+  },
+  {
+    "id": 3,
+    "company": "PaintCo",
+    "companyLogo": "https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png",
+    "details": "Clean, quick, and beautiful paint job!",
+    "service": "Painting"
+  }
+]

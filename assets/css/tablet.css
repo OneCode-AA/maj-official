@@ -1,0 +1,97 @@
+@media (min-width: 768px) {
+
+    .nav {
+        width: 75vw;
+        top: 0;
+        right: -100vw;
+
+    }
+
+    .nav.opened {
+        right: 0;
+    }
+
+    :is(.hero, .portfolio, .testimonies, .contact) {
+
+        margin-top: 30px;
+
+    }
+
+    .heroIntro {
+
+        width: 80%;
+    }
+
+    .quote, .preview {
+
+        width: 100%;
+
+    }
+
+    .heroLeft {
+        padding-inline: 3rem;
+        align-items: start;
+
+    }
+
+    .heroActions {
+        flex-direction: unset;
+        width: 80%;
+        max-width: 50vw;
+        justify-content: start;
+    }
+
+    .serviceContainer {
+        flex-direction: unset;
+        flex-wrap: wrap;
+
+    }
+
+    .project-container {
+        flex-wrap: wrap;
+        flex-direction: unset;
+
+
+    }
+
+    .projectCard {
+
+        max-height: 500px;
+        height: 400px;
+        max-width: 450px;
+        width: 100%;
+
+    }
+
+    .projectImg {
+
+        min-width: unset;
+        width: 100%;
+    }
+
+
+    .testimonials {
+        flex-wrap: wrap;
+        flex-direction: unset;
+
+
+    }
+
+    .contactContainer {
+
+        flex-direction: unset;
+        flex-wrap: wrap;
+
+    }
+
+    .contactLink {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 400px;
+
+    }
+
+
+}

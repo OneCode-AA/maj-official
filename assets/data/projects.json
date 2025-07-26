@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Outside Patio",
+    "img": "/assets/imgs/showcase1.jpeg",
+    "details": "Indoor and Outdoor remodeling.",
+    "service": "Home Remodeling"
+  },
+  {
+    "id": 2,
+    "name": "Home Fence",
+    "img": "/assets/imgs/showcase3.jpeg",
+    "details": "Home Fences installations and repairs",
+    "service": "Home Remodeling"
+  },
+  {
+    "id": 3,
+    "name": "Electrical Work",
+    "img": "/assets/imgs/showcase8.jpeg",
+    "details": "Installation and troubleshooting",
+    "service": "Electrical Maintenance"
+  }
+]
