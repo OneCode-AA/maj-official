@@ -218,12 +218,15 @@ a {
     justify-content: center;
 }
 
-:is(.hero, .portfolio, .testimonies, .contact) {
+:is(.hero, .services, .portfolio, .testimonies, .contact) {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     margin-top: 80px;
     min-height: 100vh;
+    padding-block: 30px;
+    border-bottom: 2px solid var(--theme-500);
 }
 
 
@@ -320,8 +323,6 @@ a {
     background: transparent;
     height: 100%;
     width: 100%;
-    border-top: 1px solid var(--theme-800);
-    border-bottom: 1px solid var(--theme-800);
     padding: 20px 0;
 
 
@@ -444,13 +445,16 @@ video {
 
 .testimonies {
     display: flex;
+    align-items: start;
     width: 100%;
+    min-height: 100%;
     padding-inline: 10px;
     padding-block: 5px;
 }
 
 .testimonies .section-title {
     text-align: center;
+    text-wrap: wrap;
 }
 
 .testimonials {
@@ -554,6 +558,10 @@ video {
 
 :is(.serviceCard, .projectCard, .testimonyCard):hover {
     transform: scale(1.0420);
+}
+
+.contact {
+    border-bottom: none;
 }
 
 .contactContainer {

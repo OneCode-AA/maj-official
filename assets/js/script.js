@@ -153,6 +153,9 @@ function testimonies(id, testimonials) {
       container.appendChild(article);
     } else {
       container.appendChild(placeHolder);
+      const sec = document.getElementById("testimonies");
+
+      sec.style.minHeight = "50vh";
     }
   });
 }
