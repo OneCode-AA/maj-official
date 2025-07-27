@@ -176,6 +176,7 @@ a {
     position: fixed;
     top: -100vh;
     z-index: 55;
+    box-shadow: 1px 1px 3px 1px var(--theme-400);
     transition: 500ms ease-in-out;
 }
 
